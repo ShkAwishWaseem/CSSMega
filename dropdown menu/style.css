@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Lato&family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, rgb(127, 53, 196), rgb(198, 54, 198));
+    font-family: 'Ubuntu', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+button{
+    padding: 6px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.products, .projects{
+    position: relative;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+ul{
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    height: 200px;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;   
+    transition: all 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-40px);
+    background-color: #fff;
+    border-radius: 5px;
+}
+.products li ,
+.projects li{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 27%;
+
+}
+
+li:hover{
+    background: linear-gradient(to right , rgb(174, 109, 235), rgb(224, 103, 224))
+}
+
+.btn:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}

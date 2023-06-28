@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    height: 100vh;
+}
+.cont-1, .cont-2{
+    border: 2px solid rgb(111, 169, 25);
+    padding: 10px;
+}
+.cont-1{
+    max-width: 800px;
+   margin: 0px auto;
+}
+
+.cont-2{
+    width: 500px;
+}
+
+
+

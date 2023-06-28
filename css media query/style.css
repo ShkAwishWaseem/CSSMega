@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    display: none;
+}
+
+/* @media only screen and (max-width:600px){ 
+    body{
+        background: green;
+    }
+    #box-4{
+        display: block;
+    }
+
+}
+@media only screen and  (min-width:600px) and (max-width:768px) {
+    body{
+        background: lightblue;
+    }
+    #box-3{
+        display: block;
+    }
+
+    
+}
+@media only screen and  (min-width:768px) and (max-width: 992px) {
+    body{
+        background: blueviolet;
+    }
+    #box-2{
+        display: block;
+    }
+
+    
+}
+@media only screen and  (max-width:1200) {
+    body{
+        background: cyan;
+    }
+    #box-1{
+        display: block;
+    }
+
+    
+}
+ */
+
+/* breakPoints on deifferent devices:
+    Phones 600px
+    Tablets 768px
+    Laptops 992px
+    Large 1200px
+*/
+
+@media only screen and (max-width:300px){
+    body{
+        background-color: hotpink;
+    }
+    #box-4{
+        display: block;
+    }
+}
+@media only screen and (min-width:301px) and (max-width:600px){
+    body{
+        background-color: blueviolet;
+    }
+    #box-3{
+        display: block;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:800px){
+    body{
+        background-color: cyan;
+    }
+    #box-2{
+        display: block;
+    }
+}
+@media only screen and (min-width:801px) and (max-width:1200px){
+    body{
+        background-color: lightgreen;
+    }
+    #box-1{
+        display: block;
+    }
+}
+@media only screen and (min-width:1201px){
+    body{
+        background-color: lightblue;
+    }
+    #box-1{
+        display: block;
+    }
+}

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    height: 100vh;
+}
+.hover-1{
+    line-height: 1.2em;
+    color: #0000;
+    text-shadow: 
+        0 0 #000,
+        0 1.2em #1095c1;
+    overflow: hidden;
+    transition: .3s;
+}
+.hover-1:hover{
+    text-shadow: 
+      0 -1.2em #000,
+    0 0 #1095c1;;
+}
+
+.gallery{
+    display: flex;
+    width: 440px;
+    height: 200px;
+}
+.gallery img{
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: .6s;
+    cursor: pointer;
+}
+.gallery img:hover{
+    flex: 1 1 280px;
+    opacity: 1;
+}
+
